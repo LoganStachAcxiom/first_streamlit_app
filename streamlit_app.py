@@ -59,7 +59,7 @@ except URLError as e:
 # display normalized data
 
 # import snowflake.connector
-streamlit.header("TView Our Fruit List - Add Your Favorites!")
+streamlit.header("View Our Fruit List - Add Your Favorites!")
 
 if streamlit.button('Get Fruit List'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
